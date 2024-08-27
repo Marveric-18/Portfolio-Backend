@@ -37,7 +37,7 @@ async function getUniqueVisitors() {
     ...request,
   });
   
-  const uniqueVisitors = response.data.rows?.[0].metricValues[0].value;
+  const uniqueVisitors = response.data.rows[0].metricValues[0].value;
   return uniqueVisitors;
 }
 
