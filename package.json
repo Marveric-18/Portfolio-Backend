@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development env-cmd -f .env  ./node_modules/.bin/netlify-lambda serve src",
-    "build": "NODE_ENV=production /node_modules/.bin/netlify-lambda build src"
+    "start": "NODE_ENV=development env-cmd -f .env netlify-lambda serve src",
+    "build": "NODE_ENV=production netlify-lambda build src"
   },
   "author": "@MarvenParmar",
   "license": "ISC",
